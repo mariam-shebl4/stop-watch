@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(-45deg, #efae9a, #2edace, #3437dc, #d44cd0 );
+    background-size: 400% 400%;
+    height: 100vh;
+    animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+
+.container{
+    background-color: #ffffff62;
+    width: 1000px;
+    min-width: 500px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 5% 20px;
+    top: 50%;
+    left: 50%;
+    height: 372px;
+}
+
+.timerDisplay{
+    position: relative;
+    width: 92%;
+    left: 4%;
+    padding: 0;
+    font-family: 'Roboto mono', monospace;
+    color: white;
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*buttons*/
+.buttons{
+    width: 90%;
+    margin: 50px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.buttons button{
+    width: 120px;
+    height: 82px;
+    font-family: "poppins", sans-serif;
+    font-size: 23px;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+    border-radius: 80px;
+    min-width: 130px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+    overflow: hidden;
+}
+
+/*background color for each button*/
+.buttons button:nth-last-child(1) {
+    border: 2px solid #067d30;
+    color: #067d30;
+
+}
+.buttons button:nth-last-child(1):hover {
+    color: #fff;
+    background-color: #067d30;
+    
+}
+
+.buttons button:nth-last-child(2) {
+    border: 2px solid #d90429;
+    color: #d90429;
+}
+
+.buttons button:nth-last-child(2):hover {
+    color: #fff;
+    background-color: #d90429;
+}
+
+.buttons button:nth-last-child(3) {
+    border: 2px solid #205e94;
+    color: #205e94;
+}
+
+.buttons button:nth-last-child(3):hover {
+    color: #fff;
+    background-color: #205e94;
+}
+
